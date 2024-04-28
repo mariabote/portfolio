@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 32rem;
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+}
+
+.Cabecera {
+    width: 320px;
+    height: 421px;
+    margin: 0 0 46px 0;
+    padding: 0;
+    background: url(https://okdiario.com/img/2018/08/10/como-hacer-un-escritorio.jpg) left top no-repeat;
+}
+.top {
+    position: sticky;
+    width: 32rem;
+    height: 10.5rem;
+    box-sizing: border-box;
+    display: block;
+   
+}
+.header__base {
+    opacity: 0.95;
+    background-color: #099d8d;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Nombre-del-grupo {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.Rectangle {
+    opacity: 0.9;
+    height: 4.5rem;
+    background-color: #14d9c4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.Equipo, .Quienes-somos, .Contacto {
+    margin-inline: auto;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+}

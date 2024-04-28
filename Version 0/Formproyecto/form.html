@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<section class="form">
+    <form class="form-contact">
+        <label class="label-form" for="name">
+            <span class="question">Nombre Completo<span class="text-style-1">*</span></span>
+            <input class="field" type="text" name="name" id="name" placeholder="Tu nombre" autocomplete="name" required>
+        </label>
+      <div class="emailphone-container">
+         <label class="label-form" for="email">
+            <span class="question">Email<span class="text-style-1">*</span></span>
+            <input class="field"  type="email" name="email"  id="email" placeholder="Tu mejor email" autocomplete="email" required>
+         </label>
+        <label class="label-form" for="phone">
+            <span class="question">Teléfono<span class="text-style-1">*</span></span>
+            <input class="field"  type="text" name="phone" id="phone" placeholder="Ej:123456789" autocomplete="tel">
+        </label>
+       </div>
+      </div>
+        <label class="label-form" for="message">
+            <span class="question">Mensaje<span class="text-style-1">*</span></span>
+            <textarea class="field-textarea"  id="message" placeholder="¡Cuéntanos!" required></textarea>
+        </label>
+        <div class="button-container">
+        <input class="button-form" type="submit" value="ENVIAR">
+        </div>
+    </form>
+</section>  
+    
+</body>
+</html>

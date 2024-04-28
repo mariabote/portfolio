@@ -1,0 +1,54 @@
+
+.rectangulo{
+    background-color: white;
+    margin: 0px 15px 0px 15px;
+    padding: 14px 15px 16px 15px;
+}
+
+.frase{
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;   
+    }
+
+.rectangulo-equipo{
+    background-color: white;
+    height: 504px;
+    width: 320px;
+    padding: 30px 15px 30px 15px;
+}
+
+.Equipo{
+    background-color: white;
+    margin-top: 0px;
+    padding-right: 114,5px;
+    margin-bottom: 15px;
+    padding-left: 116,5px;
+}
+
+.letra-equipo {
+    background-color: white;
+    color: aqua;
+    font-family: 'Rubik', sans-serif;
+    text-align:center;
+    line-height: 45px;
+    font-size: 24px;
+  }
+
+.rectangulo-texto{
+    background-color: ;
+    margin: 0px 15px 30px 15px
+}
+.section-parrafo{
+    background-color: white;
+    padding: 0px;
+    color: #54585a;
+    font-family:'Open Sans', sans-serif;
+    text-align:center;
+    font-size: 16px;
+    line-height: 24px;
+}

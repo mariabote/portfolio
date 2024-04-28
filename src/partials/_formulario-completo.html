@@ -1,0 +1,44 @@
+<main class="form">
+    <div class="form__contact" id="#_contacto">
+        <h1 class="form__contact__title">CONTACTO</h1>
+
+        <P class="form__contact__text">Si deseas ponerte en contacto con las heroínas de este cuento, no dudes en
+            escribir a nuestro ayudante Salem. Estará encantado de atenderte. Muchas gracias. Un saludo. Las Magas del
+            Código.</P>
+
+        <div>
+            <img class="form__contact__salem" src="./images/salem.gif" alt="salem photo">
+        </div>
+
+        <p class="form__contact__info">Todos los campos marcados con <strong
+                class="form__contact__info__asterisco">*</strong> son
+            obligatorios</p>
+    </div>
+    <section class="form__application">
+        <form class="form__application__contact" action="https://formspree.io/f/mbjvegey" method="post">
+            <label class="label-form" for="name">
+                <span class="question">Nombre Completo<span class="text-style-1">*</span></span>
+                <input class="field" type="text" name="name" id="name" placeholder="Tu nombre" autocomplete="name"
+                    required>
+            </label>
+            <div class="form__application__emailphone">
+                <label class="label-form" for="email">
+                    <span class="question">Email<span class="text-style-1">*</span></span>
+                    <input class="field" type="email" name="email" id="email" placeholder="Tu mejor email"
+                        autocomplete="email" required>
+                </label>
+                <label class="label-form" for="tel">
+                    <span class="question">Teléfono</span>
+                    <input class="field" type="text" name="tel" id="tel" placeholder="Ej:123456789" autocomplete="tel">
+                </label>
+            </div>
+            <label class="label-form" for="message">
+                <span class="question">Mensaje<span class="text-style-1">*</span></span>
+                <textarea class="field-textarea" id="message" placeholder="¡Cuéntanos!" required></textarea>
+            </label>
+            <div class="button-container">
+                <input class="button-form" type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </section>
+</main>

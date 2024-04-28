@@ -1,0 +1,256 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --gunmetal:#54585a;
+    --aqua:#14d9c4;
+    --cool-grey:#b8b8b9;
+    --blue-green:#099d8d;
+    --white:#ffffff;
+}
+
+.formulario-completo{
+    width: 320px;
+    margin:0 auto;
+    padding: 30px 15px 60px;
+    background-color: var(--white)
+}
+
+.contacto-formulario {
+    margin: 0 auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+    
+}
+
+.contacto{
+    background-color: var(--white);
+    margin-left: 97,5px;
+    margin-right: 95,5px;
+    text-align: center;
+    font-family:'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 45px;
+    color: #099d8d;
+}
+
+.Lorem{
+    background-color: var(--white);
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    color: #54585a;
+}
+
+.infoformulario{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: var(--white);
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #54585a;
+
+}
+
+.asterisco{
+    background-color: var(--white);
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: aqua;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.form{
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 320px;
+}
+
+.form-contact{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:var(--gunmetal);
+    box-sizing: border-box;
+    padding: 0px 15px 30px;
+}
+
+.question{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 7px;
+}
+
+.field{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 13px;
+    padding-left: 7px;
+    margin-top: 11px;
+}
+
+.field-textarea{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 105px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:var(--cool-grey);
+    padding-left: 7px;
+    margin-top: 11px;
+
+}
+
+.text-style-1{
+  color:var(--aqua);
+  margin-left: 5px;
+}
+
+.button-form{
+  width: 100%;
+  height: 45px;
+  margin: 30px 0 60px;
+  padding:11px 37px;
+  border-radius: 4px;
+  background-color: var(--blue-green);
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border:none;
+  justify-content:center;
+}
+
+ .placeholder{ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-grey);
+ }
+
+@media (min-width:768px){
+
+    .formulario-completo {
+        margin:0 auto;
+        margin-bottom: 80px;
+        width: 768px;
+        box-sizing: border-box;
+    }
+
+    .contacto-formulario{
+        margin: 0 auto;
+        padding-left: 15px;
+        width: 442px;
+        box-sizing: border-box;
+        
+    }
+
+    .form{
+      margin:50px auto;
+      width: 768px;
+      box-sizing: border-box;  
+    }
+
+    .form-contact{
+        margin: 0 auto;
+        width: 442px;
+        box-sizing: border-box;
+    }
+     .field{
+        width: 100%;
+     }
+     .field-textarea{
+        width: 100%;
+     }
+
+     .button-container{
+        text-align: right;
+     }
+     .button-form{
+        width: 206px;
+     }
+ }
+
+ 
+ @media (min-width:1200px){
+
+    .formulario-completo {
+        margin:0 auto;
+        margin-bottom: 80px;
+        width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .contacto-formulario{
+        margin: 0 auto;
+        padding-left: 15px;
+        width: 601px;
+        box-sizing: border-box;
+    }
+
+    .form{
+        margin: 50px auto;
+        width: 1200px;  
+
+    }
+    .form-contact{
+        width: 601px;
+        margin:0 auto;
+        box-sizing: border-box;
+    }
+ 
+    .emailphone-container{
+        display: flex;
+        gap: 45px;
+    }
+
+    .emailphone-container .field[type="email"]{
+        width: 395px;
+    }
+
+    .emailphone-container .field[type="phone"]{
+        width: 162px;
+    }
+    .field{
+        width: 100%;
+    }
+    .field-textarea{
+        width: 100%;
+     }
+     .button-form{
+        width: 278px;
+     }
+     
+     .button-container{
+        text-align: right;
+     }
+
+    }

@@ -1,0 +1,14 @@
+/*
+  core: reset, varis, @mixis
+  layout: secciones
+  components: botón. artículo, menú, enlaces
+  pages: estilos propios de cada página
+*/
+@import "./core/reset";
+@import "./core/variables";
+@import "layout/headerlanding";
+@import "layout/equipo";
+@import "layout/fyd";
+@import "layout/about-us";
+@import "layout/footer";
+@import "layout/formulario-completo";
