@@ -1,0 +1,164 @@
+cti {
+    --size: 200px;
+    --logo-width: calc(var(--size) * 0.6);
+    --line-width: calc(var(--size) * 0.03);
+    --code-height: calc(var(--size) * 0.20);
+    --to-height: calc(var(--size) * 0.05);
+    --impact-height: calc(var(--size) * 0.3);
+    --code-container-height: calc(var(--code-height) - var(--line-width));
+    --hyphen-width: var(--code-height);
+    --transition: all 0.2s ease;
+
+    background: linear-gradient(90deg, #ff66c4, #ffde59);
+
+    width: var(--size);
+    aspect-ratio: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: var(--line-width);
+    font-size: calc(2 * var(--line-width));
+    color: white;
+    text-transform: uppercase;
+
+    &.horizontal {
+        width: calc(3*var(--size));
+        aspect-ratio: 3/1 ;
+        &>logo {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            margin-top: calc(2 * var(--line-width));
+        }
+    }
+
+    &>logo {
+        width: 60%;
+        margin: 20%;
+        margin-top: 10%;
+        margin-bottom: 0px;
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: var(--code-height) var(--to-height) var(--impact-height);
+
+        &>div {
+            width: 100%;
+        }
+
+        &>.code {
+            width: 100%;
+            height: var(--code-height);
+            font-size: calc(var(--code-container-height) * 0.7);
+            position: relative;
+
+            &>div {
+                text-align: center;
+                margin: auto;
+                transform: translate(calc(0.5 * var(--line-width)), calc(0.5 * var(--line-width)));
+            }
+
+            &>deco {
+                display: block;
+                height: 100%;
+                aspect-ratio: 1;
+                position: absolute;
+                transition: var(--transition);
+
+                &.left {
+                    box-shadow: calc(-1 * var(--line-width)) var(--line-width) 0px white;
+                    bottom: 0px;
+                    left: var(--line-width);
+                }
+
+                &.right {
+                    box-shadow: var(--line-width) calc(-1 * var(--line-width)) 0px white;
+                    top: 0px;
+                    right: var(--line-width);
+                }
+            }
+        }
+
+        &>.to {
+            text-align: center;
+            transform: translate(0px, -11%);
+        }
+
+        &>.impact {
+            width: 100%;
+            height: var(--impact-height);
+            font-size: calc(0.3 * var(--impact-height));
+            display: grid;
+            grid-template-columns: 50% 50%;
+            overflow: hidden;
+
+            &>column {
+                height: calc(1.5 * var(--impact-height));
+                display: grid;
+                align-items: center;
+                grid-template-rows: 33% 33% 33%;
+
+                transition: var(--transition);
+
+                &>deco {
+                    height: var(--line-width);
+                    width: var(--hyphen-width);
+                    background-color: white;
+                }
+            }
+
+            &>column:first-child {
+                text-align: left;
+                justify-items: start;
+                transform: translate(0px, calc(-0.5 * var(--impact-height)));
+            }
+
+            &>column:last-child {
+                text-align: right;
+                justify-items: end;
+            }
+
+        }
+
+    }
+
+    &>footer {
+        width: 60%;
+        margin: 0px;
+        margin-top: var(--line-width);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+
+        &>* {
+            margin: 0px;
+            width: 100%;
+            font-size: var(--line-width);
+        }
+    }
+
+}
+
+cti:hover {
+    & .anim {
+        &__rotate {
+            transform: rotate(90deg) !important;
+        }
+
+        &__slidedown {
+            transform: translate(0px, calc(-0.5 * var(--impact-height))) !important;
+        }
+
+        &__slidezero {
+            transform: translate(0px, 0px) !important;
+        }
+    }
+}
