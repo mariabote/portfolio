@@ -30,7 +30,7 @@
   &__title {
     scroll-margin-top: 105px;
     grid-column: 1 span;
-    color: #14d9c4;
+    color: #FFB181;
     font-family: "Rubik", sans-serif;
     text-align: center;
     line-height: 45px;
@@ -67,7 +67,7 @@
     align-items: center;
 
     &__title {
-      color: #099d8d;
+      color: #FFB181;
       scroll-margin-top: 60px;
     }
 
@@ -78,6 +78,7 @@
     }
   }
 }
+
 /* Desktop*/
 @media (min-width: 1200px) {
   .rectangle1 {
@@ -104,7 +105,7 @@
     &__title {
       width: 601px;
       margin: 0 auto;
-      color: #099d8d;
+      color: #FFB181;
       align-items: center;
     }
 
