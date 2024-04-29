@@ -4,6 +4,7 @@
   margin: 1.5em 0;
   border-top: solid 1px #b8b8b9;
 }
+
 .container_footer_name {
   font-size: 1.4rem;
   color: #b8b8b9;
@@ -41,23 +42,26 @@
   width: 120px;
 }
 
+
 @media screen and (min-width: 768px) {
   .container_footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 3em;
   }
+
   .container_footer_nav {
     grid-row: span 2;
   }
+
   .container_footer_nav li {
     text-align: right;
   }
+
   .container_footer_logo,
   .container_footer_name {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 1200px) {
-}
+@media screen and (min-width: 1200px) {}
